@@ -1,0 +1,23 @@
+# ==============================================================================
+# Name : edge_list.txt
+# Desc : The data file that feeds to the graph traversal Perl program. Blank
+#      : lines and lines starting with "#" character are ignored. Each line
+#      : should have the edge list separated by a delimiter or blank spaces.
+# By   : prat
+# On   : 6-Mar-2015
+# ==============================================================================
+
+A    B
+#H    B
+A    C
+#B    D
+#B    E
+C    F
+G    F
+#G    C
+F    A
+#F    C
+#F    G
+#E    H
+#E    A
+

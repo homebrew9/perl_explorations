@@ -1,0 +1,134 @@
+# ==============================================================================
+# Name : hr_emp_hierarchy.txt
+# Desc : This data is pulled from Oracle's HR schema using the following query:
+#      :
+#      :    --
+#      :    with t as (
+#      :        select e.employee_id as emp_emp_id,
+#      :               e.first_name||' '||e.last_name as emp_name,
+#      :               e.manager_id as emp_mgr_id,
+#      :               m.employee_id as mgr_mgr_id,
+#      :               m.first_name||' '||m.last_name as mgr_name
+#      :          from hr.employees e
+#      :               left outer join hr.employees m
+#      :               on ( m.employee_id = e.manager_id)
+#      :    )
+#      :    select mgr_name||':'||emp_name as edge_list
+#      :      from t
+#      :     where emp_mgr_id is not null
+#      :    ;
+#      :
+#      : The delimiter is ":" character.
+# By   : prat
+# On   : 6-Mar-2015
+# ==============================================================================
+
+
+Steven King:Eleni Zlotkey
+Steven King:Matthew Weiss
+Steven King:Shanta Vollman
+Steven King:John Russell
+Steven King:Den Raphaely
+Steven King:Karen Partners
+Steven King:Kevin Mourgos
+Steven King:Neena Kochhar
+Steven King:Payam Kaufling
+Steven King:Michael Hartstein
+Steven King:Adam Fripp
+Steven King:Alberto Errazuriz
+Steven King:Lex De Haan
+Steven King:Gerald Cambrault
+Neena Kochhar:Jennifer Whalen
+Neena Kochhar:Susan Mavris
+Neena Kochhar:Shelley Higgins
+Neena Kochhar:Nancy Greenberg
+Neena Kochhar:Hermann Baer
+Lex De Haan:Alexander Hunold
+Alexander Hunold:Valli Pataballa
+Alexander Hunold:Diana Lorentz
+Alexander Hunold:Bruce Ernst
+Alexander Hunold:David Austin
+Nancy Greenberg:Jose Manuel Urman
+Nancy Greenberg:Ismael Sciarra
+Nancy Greenberg:Luis Popp
+Nancy Greenberg:Daniel Faviet
+Nancy Greenberg:John Chen
+Den Raphaely:Sigal Tobias
+Den Raphaely:Alexander Khoo
+Den Raphaely:Guy Himuro
+Den Raphaely:Karen Colmenares
+Den Raphaely:Shelli Baida
+Matthew Weiss:Winston Taylor
+Matthew Weiss:Martha Sullivan
+Matthew Weiss:Julia Nayer
+Matthew Weiss:Irene Mikkilineni
+Matthew Weiss:Steven Markle
+Matthew Weiss:James Landry
+Matthew Weiss:Girard Geoni
+Matthew Weiss:Jean Fleaur
+Adam Fripp:Nandita Sarchand
+Adam Fripp:TJ Olson
+Adam Fripp:James Marlow
+Adam Fripp:Julia Dellinger
+Adam Fripp:Anthony Cabrio
+Adam Fripp:Alexis Bull
+Adam Fripp:Laura Bissot
+Adam Fripp:Mozhe Atkinson
+Payam Kaufling:Michael Rogers
+Payam Kaufling:Hazel Philtanker
+Payam Kaufling:Randall Perkins
+Payam Kaufling:Jason Mallin
+Payam Kaufling:Ki Gee
+Payam Kaufling:Timothy Gates
+Payam Kaufling:Jennifer Dilly
+Payam Kaufling:Kelly Chung
+Shanta Vollman:Stephen Stiles
+Shanta Vollman:John Seo
+Shanta Vollman:Joshua Patel
+Shanta Vollman:Samuel McCain
+Shanta Vollman:Renske Ladwig
+Shanta Vollman:Vance Jones
+Shanta Vollman:Britney Everett
+Shanta Vollman:Sarah Bell
+Kevin Mourgos:Alana Walsh
+Kevin Mourgos:Peter Vargas
+Kevin Mourgos:Trenna Rajs
+Kevin Mourgos:Donald OConnell
+Kevin Mourgos:Randall Matos
+Kevin Mourgos:Douglas Grant
+Kevin Mourgos:Kevin Feeney
+Kevin Mourgos:Curtis Davies
+John Russell:Oliver Tuvault
+John Russell:Peter Tucker
+John Russell:Christopher Olsen
+John Russell:Peter Hall
+John Russell:Nanette Cambrault
+John Russell:David Bernstein
+Karen Partners:Patrick Sully
+Karen Partners:Lindsey Smith
+Karen Partners:Sarath Sewall
+Karen Partners:Allan McEwen
+Karen Partners:Janette King
+Karen Partners:Louise Doran
+Alberto Errazuriz:Clara Vishney
+Alberto Errazuriz:Mattea Marvins
+Alberto Errazuriz:David Lee
+Alberto Errazuriz:Danielle Greene
+Alberto Errazuriz:Amit Banda
+Alberto Errazuriz:Sundar Ande
+Gerald Cambrault:William Smith
+Gerald Cambrault:Lisa Ozer
+Gerald Cambrault:Sundita Kumar
+Gerald Cambrault:Tayler Fox
+Gerald Cambrault:Harrison Bloom
+Gerald Cambrault:Elizabeth Bates
+Eleni Zlotkey:Jonathon Taylor
+Eleni Zlotkey:Jack Livingston
+Eleni Zlotkey:Charles Johnson
+Eleni Zlotkey:Alyssa Hutton
+Eleni Zlotkey:Kimberely Grant
+Eleni Zlotkey:Ellen Abel
+Michael Hartstein:Pat Fay
+Shelley Higgins:William Gietz
+
+
